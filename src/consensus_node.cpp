@@ -16,7 +16,6 @@ int main(int argc, char **argv){
 
 	ros::service::waitForService("spawn");
 	ros::ServiceClient spawnTurtle = nh.serviceClient<turtlesim::Spawn>("spawn");
-	ros::ServiceClient killerBose = nh.serviceClient<turtlesim::Kill>("kill");
 	
 	turtlesim::Spawn::Request req;
 	turtlesim::Spawn::Response resp;
