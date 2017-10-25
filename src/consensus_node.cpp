@@ -1,12 +1,6 @@
 #include <ros/ros.h>
 #include <turtlesim/Spawn.h>
-#include <turtlesim/Kill.h>
 #include <cstdlib>
-
-struct sample {
-	std::string turtle_name;
-	int x, y, theta;
-};
 
 int main(int argc, char **argv){
 	ros::init(argc, argv, "my_consensus_node");
