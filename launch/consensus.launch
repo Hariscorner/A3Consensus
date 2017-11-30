@@ -1,0 +1,8 @@
+<launch>
+	<param name="nTurtle" value="3" />
+	<node pkg="turtlesim" type="turtlesim_node" name="simulator" />
+	<node pkg="consensus" type="consensus_node" args="myturtle1 3 3 1"  name="ourturtlenode" launch-prefix="xterm -bg Teal -geometry 120x31+10+10 -e "/>
+	<node pkg="consensus" type="kill_turtle_node" name="mykiller" />
+	<node pkg="consensus" type="consensus_node" args="myturtle2 9 8 1" name="ourturtlenode2" launch-prefix="xterm -bg Teal -geometry 120x31+210+110 -e "/>
+	<node pkg="consensus" type="consensus_node" args="myturtle3 4 5 1" name="ourturtlenode3" launch-prefix="xterm -bg Teal -geometry 120x31+410+210 -e "/>
+</launch>
